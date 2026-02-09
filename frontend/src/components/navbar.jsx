@@ -1,4 +1,4 @@
-import "./navbar.css";
+import "./Navbar.css";
 
 const Navbar = () => {
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
           <a href="impact">Impact</a>
         </li>
         <li>
-          <a href="projects">Projects</a>
+          <a href="contact">Contact</a>
         </li>
       </ul>
       <div>
