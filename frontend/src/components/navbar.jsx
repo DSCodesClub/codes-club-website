@@ -1,23 +1,30 @@
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <div className="logo">Codes Club</div>
+      <div className="logo">
+        <Link to="/" className="logo-link">
+          Codes Club
+        </Link>
+      </div>
+
       <ul className="links">
         <li>
-          <a href="/">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="pillars">Pillars</a>
+          <Link to="/pillars">Pillars</Link>
         </li>
         <li>
-          <a href="impact">Impact</a>
+          <Link to="/impact">Impact</Link>
         </li>
         <li>
-          <a href="contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
+
       <div>
         <button className="login">Login</button>
         <button className="join">Join</button>
@@ -25,4 +32,5 @@ const Navbar = () => {
     </nav>
   );
 };
+
 export default Navbar;

@@ -113,3 +113,39 @@
     display: none;
   }
 }
+
+/* Logo link */
+.logo-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Subtle underline effect */
+.logo-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background-color: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect */
+.logo-link:hover {
+  color: #38bdf8;
+}
+
+.logo-link:hover::after {
+  width: 100%;
+}
+
+.logo-link:hover {
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
